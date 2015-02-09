@@ -43,7 +43,7 @@ class Y_Finance {
      * Filter for mce_external_plugins.
      */
     public function wp_editor_plugins($plugin_array) {
-        $plugin_array['yfinance'] = plugin_dir_url(__FILE__) . 'js/yfinance.js';
+        $plugin_array['yfinance'] = plugin_dir_url(__FILE__) . 'js/yfinance.min.js';
         return $plugin_array;
     }
 
