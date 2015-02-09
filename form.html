@@ -1,0 +1,59 @@
+<div id="yfinance">
+    <form action="">
+        <h2>Yahoo Finance Chart<i id="yfinance_close">&times;</i></h2>
+        <div class="row">
+            <div class="column column-50">
+                <label>Ticker</label>
+                <input type="text" class="widefat" name="ticker" placeholder="AMZN">
+            </div>
+            <div class="column column-50">
+                <label>Size</label>
+                <select name="size" class="widefat">
+                    <option value="s">Small</option>
+                    <option value="m" selected="selected">Medium</option>
+                    <option value="l">Large</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-50">
+                <label>Time Span</label>
+                <div class="row nomargin">
+                    <div class="column column-50"><input name="time_int" type="text" class="widefat" placeholder="10"></div>
+                    <div class="column column-50">
+                        <select name="time_unit" class="widefat">
+                            <option value="d">Day(s)</option>
+                            <option value="m">Month(s)</option>
+                            <option value="y">Year(s)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="column column-50">
+                <label>Type</label>
+                <select name="type" class="widefat">
+                    <option value="l">Line</option>
+                    <option value="b">Bar</option>
+                    <option value="c">Candle</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-50">
+                <label>Logarithmic Scaling</label>
+                <select name="log_scaling" class="widefat">
+                    <option value="on" selected="selected">On</option>
+                    <option value="off">Off</option>
+                </select>
+            </div>
+            <div class="column column-50">
+                <label>Moving Average Indicator</label>
+                <div class="row nomargin">
+                    <div class="column column-50"><input name="mai_1" type="text" class="widefat" placeholder="50"></div>
+                    <div class="column column-50"><input name="mai_2" type="text" class="widefat" placeholder="200"></div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="button-primary">Insert Chart</button>
+    </form>
+</div>
